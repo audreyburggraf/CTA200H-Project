@@ -299,7 +299,7 @@ alpha0, delta0 = 1, 0.3
 P_orb_array = np.linspace(0.1, 10, K)
 
 colors_JK = sns.color_palette("hls", J*K)
-colors_K = sns.color_palette("hls", J*K)
+colors_K = sns.color_palette("hls", K)
 
 markers  = [",","o","v","^","<",">",".","8","s","p","P","*","h","H","X","D","d",4,5,6,7,8,9,10,11]
 
