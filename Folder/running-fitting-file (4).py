@@ -287,9 +287,9 @@ def big_func(N, S, times, theta, alpha0, delta0, P_orb):
 # initial inputs 
 # ---------------------------------------------------------------------------------------------------------------------------------------------------------
 N = 100 # number of timesteps 
-S = 3  # number of errors
-K = 2   # number of periods
-J = 2   # number of entries in each bin
+S = 50  # number of errors
+K = 10   # number of periods
+J = 5   # number of entries in each bin
 
 times = np.linspace(0, 5, N)
 theta = np.linspace(0, 2*np.pi, N)
