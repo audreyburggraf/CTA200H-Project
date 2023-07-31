@@ -337,7 +337,7 @@ for s in range(S):
 # P vs SN plot 
 plt.figure(figsize=(8,5))
 
-plt.scatter(SN_1P, P_orb_plot_1P, color=colors_K[0], marker=markers[0], label="$P_{orb}$"+str(P_orb_array[0]))
+plt.scatter(SN_1P, P_orb_plot_1P, color=colors_K[0], marker=markers[0], label="$P_{orb}=$"+str(P_orb_array[0]))
 
 plt.xlabel('S/N', fontsize = 15)
 plt.ylabel('$P_{orb}$', fontsize=15)
@@ -355,7 +355,7 @@ plt.savefig('P_vs_SN_1P.pdf')
 # -Delta BIC vs SN plot
 plt.figure(figsize=(8,5))
 
-plt.scatter(SN_1P, -1*Delta_BIC_1P, color=colors_K[0], marker=markers[0], label="$P_{orb}$"+str(P_orb_array[0]))
+plt.scatter(SN_1P, -1*Delta_BIC_1P, color=colors_K[0], marker=markers[0], label="$P_{orb}=$"+str(P_orb_array[0]))
 plt.xscale('log')
 plt.yscale('log')
 
