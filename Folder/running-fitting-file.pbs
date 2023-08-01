@@ -1,0 +1,20 @@
+#!/bin/bash -l
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=6:00:00
+#PBS -r y
+#PBS -j oe
+#PBS -q workq
+#PBS -J 0-10:1
+
+# NOTE: workq only allows nodes=1 and ppn<=8
+# Load your modules
+# if you use module purge, make sure to load the maui and torque modules
+# e.g.,
+
+echo "PBS Job Id PBS_JOBID is ${PBS_JOBID}"
+echo "PBS job array index PBS_ARRAY_INDEX value is ${PBS_ARRAY_INDEX}"
+
+module load python
+cd /fs/lustre/scratch/aburggraf
+python running-fitting-file.py ${PBS_ARRAY_INDEX} 0
+
